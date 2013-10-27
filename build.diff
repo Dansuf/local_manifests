@@ -1,0 +1,28 @@
+diff --git a/core/main.mk b/core/main.mk
+index 85bc117..0b2b5d9 100644
+--- a/core/main.mk
++++ b/core/main.mk
+@@ -471,6 +471,7 @@ subdirs := \
+ 	build/tools/zipalign \
+ 	development/tools/emulator/opengl \
+ 	external/aac \
++	external/bluetooth/bluedroid \
+ 	external/busybox \
+ 	external/bzip2 \
+ 	external/e2fsprogs \
+@@ -501,6 +502,7 @@ subdirs := \
+ 	external/webrtc \
+ 	external/wpa_supplicant_6 \
+ 	external/wpa_supplicant_8 \
++	external/wpa_supplicant_8_ti \
+ 	external/yaffs2 \
+ 	external/zlib \
+ 	frameworks/av/camera \
+@@ -532,6 +534,7 @@ subdirs := \
+ 	frameworks/native/services \
+ 	frameworks/opt/emoji \
+ 	hardware \
++        libnativehelper \
+ 	prebuilts/tools/linux-x86/sdl \
+ 	sdk/emulator \
+ 	system/core \

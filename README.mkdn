@@ -1,0 +1,32 @@
+Ubuntu Phablet (Android Part)
+=============================
+
+Submitting Patches
+------------------
+Patches are always welcome! Please submit your patches via the Ubuntu Phone mailing list (ubuntu-phone@lists.launchpad.net) or to d[at]winzen4.de if it is specifically for Xperia2011 devices.
+
+You can find more information about the mailing list and the Launchpad ubuntu-phone team at https://launchpad.net/~ubuntu-phone or at danwin.github.io/ubuntu-touch.html for information about the Xperia2011 port.
+
+Getting Started
+---------------
+
+To get started with Ubuntu Phablet Android build, you'll need to get
+familiar with [Git and Repo](http://source.android.com/download/using-repo).
+
+To initialize your local repository using the Ubuntu Phablet trees, use a command like this:
+
+    repo init -u git://phablet.ubuntu.com/CyanogenMod/android.git -b phablet-saucy
+
+And to get the Xperia2011 related sources, use this command:
+
+    cd .repo
+    git clone git://gihub.com/DanWin/local_manifests.git
+    cd ..
+
+Then to sync up:
+
+    repo sync
+
+Then you have to apply all changes in the *.diff files that are in this directory.
+
+Please see the (http://wiki.ubuntu.com/) for building instructions.
