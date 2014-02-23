@@ -20,7 +20,7 @@ To initialize your local repository using the Ubuntu Phablet trees, use a comman
 And to get the Xperia2011 related sources, use this command:
 
     cd .repo
-    git clone git://gihub.com/DanWin/local_manifests.git
+    git clone git://github.com/DanWin/local_manifests.git
     cd ..
 
 Then to sync up:
