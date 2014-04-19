@@ -1,5 +1,18 @@
+diff --git a/core/Makefile b/core/Makefile
+index d3a2402..ef1365e 100644
+--- a/core/Makefile
++++ b/core/Makefile
+@@ -470,7 +470,7 @@ $(INSTALLED_BOOTIMAGE_TARGET): $(MKEXT2IMG) $(INTERNAL_BOOTIMAGE_FILES)
+ 	$(hide) $(MKEXT2BOOTIMG) $(INTERNAL_BOOTIMAGE_ARGS) --output $@
+ 	@echo -e ${CL_CYN}"Made boot image for Ubuntu Touch: $@"${CL_RST}
+ 
+-else ifndef BOARD_CUSTOM_BOOTIMG_MK # TARGET_BOOTIMAGE_USE_EXT2 != true
++else #ifndef BOARD_CUSTOM_BOOTIMG_MK # TARGET_BOOTIMAGE_USE_EXT2 != true
+ INTERNAL_BOOTIMAGE_ARGS += $(INTERNAL_BOOTIMAGE_ARGS_COMMON)
+ INTERNAL_BOOTIMAGE_ARGS_ANDROID += $(INTERNAL_BOOTIMAGE_ARGS_COMMON)
+ 
 diff --git a/core/main.mk b/core/main.mk
-index 85bc117..0b2b5d9 100644
+index 85bc117..f5fa86f 100644
 --- a/core/main.mk
 +++ b/core/main.mk
 @@ -471,6 +471,7 @@ subdirs := \
@@ -22,7 +35,7 @@ index 85bc117..0b2b5d9 100644
  	frameworks/native/services \
  	frameworks/opt/emoji \
  	hardware \
-+        libnativehelper \
++	libnativehelper \
  	prebuilts/tools/linux-x86/sdl \
  	sdk/emulator \
  	system/core \

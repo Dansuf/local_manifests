@@ -1,0 +1,27 @@
+diff --git a/mogami.mk b/mogami.mk
+index 1fe8010..e48dfce 100644
+--- a/mogami.mk
++++ b/mogami.mk
+@@ -53,14 +53,14 @@ PRODUCT_PACKAGES += \
+     uim-sysfs \
+     libbt-vendor
+ 
+-# TI FM app
+-PRODUCT_PACKAGES += \
+-    FmRxApp \
+-    FmService \
+-    kfmapp \
+-    libfmradio \
+-    fmradioif \
+-    com.ti.fm.fmradioif.xml
++# TI FM app - FmRxApp has a compilation error and for now we can just leave it commented as it doesn't seem to be important (hmm... it looks like an android app so maybe we don't need it at all)
++#PRODUCT_PACKAGES += \
++#    FmRxApp \
++#    FmService \
++#    kfmapp \
++#    libfmradio \
++#    fmradioif \
++#    com.ti.fm.fmradioif.xml
+ 
+ PRODUCT_PROPERTY_OVERRIDES += \
+     wifi.interface=wlan0 \
